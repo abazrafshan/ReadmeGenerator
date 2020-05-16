@@ -1,10 +1,10 @@
 
 
 function generateMarkdown(data) {
-  
-  
   return `
 # ${data.projectName}
+
+${data.username}
 
 
 ## Description
@@ -47,10 +47,7 @@ ${data.contribute}
 
 The following test(s) can be used to verify functionality: ${data.test}
 
-
-
-
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = generateMarkdown();
