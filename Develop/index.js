@@ -7,7 +7,6 @@
 // and write this file to a named readme.md
 
 const fs = require("fs");
-const axios = require("axios");
 const inquirer = require("inquirer");
 
 const questions = [
@@ -81,7 +80,8 @@ inquirer.prompt([
         message: questions[9],
         name: "contribute"
     },
-])
+]).then(writeToFile("readme.md", data));
+
 function writeToFile(fileName, data) {
 }
 
