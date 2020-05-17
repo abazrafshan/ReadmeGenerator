@@ -119,24 +119,25 @@ function generateMarkdown(data) {
     return `
   # ${data.projectName}
   
-  ${data.username}
-  
-  
   ## Description
   
   ${data.description}
   
-  The deployed application can be found at ${data.projectURL}
+  The deployed application can be found at the following link: ${data.projectURL}
   
   ## Table of Contents
-  * Title
-  * Description
-  * Install
-  * Usage
-  * License
-  * Contributing
-  * Tests
-  * Questions
+
+  * [Install](#install)
+
+  * [Usage](#usage)
+
+  * [License](#license)
+
+  * [Contributing](#contributing)
+
+  * [Tests](#tests)
+  
+  * [Questions](#questions)
   
   ## Install
   
