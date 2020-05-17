@@ -139,7 +139,7 @@ function generateMarkdown(data) {
     else {
         lic = `No license selected`;
     }
-
+// Using template literal to create framework of readme incorporating user input from inquirer method
     return `
 # ${data.projectName}
   
