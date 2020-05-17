@@ -121,16 +121,33 @@ function promptUser(){
 
 // Data is passed to this function and uses template literal to populate contents of readme
 function generateMarkdown(data) {
+    let lic = ``;
+    const dataLicense = data.license;
+    // Generate badge from user's license input
+    if (dataLicense == "MIT"){
+        lic = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+    }
+    else if (dataLicense == "APACHE 2.0"){
+        lic = `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
+    }
+    else if (dataLicense == "GPL 3.0"){
+        lic = `[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`;
+    }
+    else if (dataLicense == "BSD 3"){
+        lic =`[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
+    }
+    else {
+        lic = `No license selected`;
+    }
+
     return `
   # ${data.projectName}
-  (https://github.com/${data.username}/${data.projectName})
+  
+  ${lic}
 
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause);
   ## Description
   
   ${data.description}
-  
-  The deployed application can be found at the following link: ${data.projectURL}
   
   ## Table of Contents
 
@@ -145,6 +162,8 @@ function generateMarkdown(data) {
   * [Tests](#tests)
 
   * [Questions](#questions)
+
+  * [Links](#links)
   
   ## Install
   
@@ -173,6 +192,11 @@ function generateMarkdown(data) {
   ## Questions
 
   If you have any questions about the repo, open an issue or contact [${data.username}] directly at ${data.email}
+
+  ## Links
+
+  Link to deployed application: ${data.projectURL}
+  Link to Github repo: (https://github.com/${data.username}/${data.projectName})
   
   `;}
  

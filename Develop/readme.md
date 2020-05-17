@@ -1,13 +1,13 @@
 
-  # myproject
-  (https://github.com/abazrafshan/myproject)
+  # WeatherDashboard
+  (https://github.com/abazrafshan/WeatherDashboard)
 
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause);
+  [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
   ## Description
   
   This is a great project
   
-  The deployed application can be found at the following link: myproject.com
+  The deployed application can be found at the following link: www.myproject.com
   
   ## Table of Contents
 
@@ -31,15 +31,11 @@
   
   ## Usage
   
-  Not much!
+  It's awesome
   
   ## License
   
-  Project is licensed under the following: APACHE 2.0
-  
-  ## Badges
-  
-  
+  Project is licensed under the following: GPL 3.0
   
   ## Contributing
   
@@ -49,7 +45,7 @@
   
   The following test(s) can be used to verify functionality: 
   
-  npm tests
+  npm test
 
   ## Questions
 
