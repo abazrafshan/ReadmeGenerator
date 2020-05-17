@@ -1,54 +1,59 @@
 
-  # WeatherDashboard
-  (https://github.com/abazrafshan/WeatherDashboard)
+# My Project
+  
+No license selected
 
-  [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
-  ## Description
+## Description
   
-  This is a great project
+Check it out
   
-  The deployed application can be found at the following link: www.myproject.com
-  
-  ## Table of Contents
+## Table of Contents
 
-  * [Install](#install)
+* [Install](#install)
 
-  * [Usage](#usage)
+* [Usage](#usage)
 
-  * [License](#license)
+* [License](#license)
 
-  * [Contributing](#contributing)
+* [Contributing](#contributing)
 
-  * [Tests](#tests)
+* [Tests](#tests)
 
-  * [Questions](#questions)
-  
-  ## Install
-  
-  Install dependencies for this application by running command:
-  
-  npm i
-  
-  ## Usage
-  
-  It's awesome
-  
-  ## License
-  
-  Project is licensed under the following: GPL 3.0
-  
-  ## Contributing
-  
-  Commit often
-  
-  ## Tests
-  
-  The following test(s) can be used to verify functionality: 
-  
-  npm test
+* [Questions](#questions)
 
-  ## Questions
-
-  If you have any questions about the repo, open an issue or contact [abazrafshan] directly at abazrafshan123@gmail.com
+* [Links](#links)
   
+## Install
+  
+Install dependencies for this application by running command:
+  
+    npm i
+  
+## Usage
+  
+a lot
+  
+## License
+  
+Project is licensed under the following: None
+  
+## Contributing
+  
+not much
+  
+## Tests
+  
+The following test(s) can be used to verify functionality: 
+  
+    npm test
+
+## Questions
+
+If you have any questions about the repo, open an issue or contact [abaz] directly at abaz@gmail.com
+
+## Links
+
+Link to deployed application: myproject.com
+
+Link to Github repo: (https://github.com/abaz/My Project)
   

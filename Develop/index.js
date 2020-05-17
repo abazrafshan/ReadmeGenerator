@@ -2,9 +2,9 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
-// const generateMarkdown = require("./utils/generateMarkdown");
 // Promisify writeFile function
 const writeFileAsync = util.promisify(fs.writeFile);
+// const generateMarkdown = require("./utils/generateMarkdown");
 
 // Array of questions that are prompted as user is building readme
 const questions = [
@@ -141,64 +141,65 @@ function generateMarkdown(data) {
     }
 
     return `
-  # ${data.projectName}
+# ${data.projectName}
   
-  ${lic}
+${lic}
 
-  ## Description
+## Description
   
-  ${data.description}
+${data.description}
   
-  ## Table of Contents
+## Table of Contents
 
-  * [Install](#install)
+* [Install](#install)
 
-  * [Usage](#usage)
+* [Usage](#usage)
 
-  * [License](#license)
+* [License](#license)
 
-  * [Contributing](#contributing)
+* [Contributing](#contributing)
 
-  * [Tests](#tests)
+* [Tests](#tests)
 
-  * [Questions](#questions)
+* [Questions](#questions)
 
-  * [Links](#links)
+* [Links](#links)
   
-  ## Install
+## Install
   
-  Install dependencies for this application by running command:
+Install dependencies for this application by running command:
   
-  ${data.install}
+    ${data.install}
   
-  ## Usage
+## Usage
   
-  ${data.info}
+${data.info}
   
-  ## License
+## License
   
-  Project is licensed under the following: ${data.license}
+Project is licensed under the following: ${data.license}
   
-  ## Contributing
+## Contributing
   
-  ${data.contribute}
+${data.contribute}
   
-  ## Tests
+## Tests
   
-  The following test(s) can be used to verify functionality: 
+The following test(s) can be used to verify functionality: 
   
-  ${data.test}
+    ${data.test}
 
-  ## Questions
+## Questions
 
-  If you have any questions about the repo, open an issue or contact [${data.username}] directly at ${data.email}
+If you have any questions about the repo, open an issue or contact [${data.username}] directly at ${data.email}
 
-  ## Links
+## Links
 
-  Link to deployed application: ${data.projectURL}
-  Link to Github repo: (https://github.com/${data.username}/${data.projectName})
+Link to deployed application: ${data.projectURL}
+
+Link to Github repo: (https://github.com/${data.username}/${data.projectName})
   
-  `;}
+`;}
  
 // User is first prompted for input from inquirer method and this data is passed into another function
 promptUser().then(function(answers){
