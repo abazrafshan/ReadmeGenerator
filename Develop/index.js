@@ -79,89 +79,102 @@ function promptUser(){
     ]);
 }
 
-function writeToFile(fileName, data) {
-    const content = generateMarkdown(data);
-    return fs.writeFile(fileName, content, function(err){
-        if (err){
-            return console.log(err);
-        }
-            console.log("success");
-        });
-}
-
-function init() {
-    promptUser()
-    .then(writeToFile("readme.md",data))
-    .then(function(){
-        console.log("success");
-    })
-    .catch(function(err){
-        console.log(err);
-    })
-}
-
-init();
-
-// function generateMarkdown(data) {
-//     return `
-//   # ${data.projectName}
-  
-//   ${data.username}
-  
-  
-//   ## Description
-  
-//   ${data.description}
-  
-//   The deployed application can be found at ${data.projectURL}
-  
-//   ## Table of Contents
-//   * Title
-//   * Description
-//   * Install
-//   * Usage
-//   * License
-//   * Contributing
-//   * Tests
-//   * Questions
-  
-//   ## Install
-  
-//   Install dependencies for this application by running command ${data.install}
-  
-//   ## Usage
-  
-//   ${data.info}
-  
-//   ## License
-  
-//   Project is licensed under the following: ${data.license}
-  
-//   ## Badges
-  
-  
-  
-//   ## Contributing
-  
-//   ${data.contribute}
-  
-//   ## Tests
-  
-//   The following test(s) can be used to verify functionality: ${data.test}
-  
-//   `;
-//   }
-  
-// promptUser().then(function(answers){
-//     const content = generateMarkdown(answers);
-//     return fs.writeFile("readme.md",content,function(err){
+// async function writeToFile(fileName, data) {
+//     const content = await generateMarkdown.generateMarkdown(data);
+//     await writeFileAsync(fileName, content, function(err){
 //         if (err){
 //             return console.log(err);
 //         }
+//             console.log("success");
+//         });
+// }
+
+// async function writeToFile(fileName, data) {
+//     try{
+//     const content = await generateMarkdown.generateMarkdown(data);
+//     await writeFileAsync(fileName, content);
 //         console.log("success");
-//     });
-// }).then(function(){
-//     console.log("success");
-// }).catch(function(err){
+// } catch(err)
+// {
 //     console.log(err);
-// });
+// }};
+
+
+
+// async function init() {
+//     try{
+//         await promptUser();
+    
+//     await writeToFile("readme.md",content);
+//     console.log("success");
+
+//     } catch(err) {
+//         console.log(err);
+//     }
+// };
+
+// init();
+
+function generateMarkdown(data) {
+    return `
+  # ${data.projectName}
+  
+  ${data.username}
+  
+  
+  ## Description
+  
+  ${data.description}
+  
+  The deployed application can be found at ${data.projectURL}
+  
+  ## Table of Contents
+  * Title
+  * Description
+  * Install
+  * Usage
+  * License
+  * Contributing
+  * Tests
+  * Questions
+  
+  ## Install
+  
+  Install dependencies for this application by running command ${data.install}
+  
+  ## Usage
+  
+  ${data.info}
+  
+  ## License
+  
+  Project is licensed under the following: ${data.license}
+  
+  ## Badges
+  
+  
+  
+  ## Contributing
+  
+  ${data.contribute}
+  
+  ## Tests
+  
+  The following test(s) can be used to verify functionality: ${data.test}
+  
+  `;
+  }
+  
+promptUser().then(function(answers){
+    const content = generateMarkdown(answers);
+    return fs.writeFile("readme.md",content,function(err){
+        if (err){
+            return console.log(err);
+        }
+        console.log("success");
+    });
+}).then(function(){
+    console.log("success");
+}).catch(function(err){
+    console.log(err);
+});
