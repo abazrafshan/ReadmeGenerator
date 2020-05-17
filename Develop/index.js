@@ -1,9 +1,12 @@
+// Call required node methods
 const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
 // const generateMarkdown = require("./utils/generateMarkdown");
+// Promisify writeFile function
 const writeFileAsync = util.promisify(fs.writeFile);
 
+// Array of questions that are prompted as user is building readme
 const questions = [
 "What is the your Github username?",
 "What is your email?",
@@ -17,6 +20,7 @@ const questions = [
 "What does the user need to know about contributing to the repo?"
 ];
 
+// Function that uses inquirer method to prompt user for input on content of readme, returns the data from user input
 function promptUser(){
     return inquirer.prompt([
         {
@@ -115,14 +119,13 @@ function promptUser(){
 
 // init();
 
+// Data is passed to this function and uses template literal to populate contents of readme
 function generateMarkdown(data) {
     return `
   # ${data.projectName}
-  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-  [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
-  [![nLicense](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+  (https://github.com/${data.username}/${data.projectName})
 
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause);
   ## Description
   
   ${data.description}
@@ -157,10 +160,6 @@ function generateMarkdown(data) {
   
   Project is licensed under the following: ${data.license}
   
-  ## Badges
-  
-  
-  
   ## Contributing
   
   ${data.contribute}
@@ -175,11 +174,13 @@ function generateMarkdown(data) {
 
   If you have any questions about the repo, open an issue or contact [${data.username}] directly at ${data.email}
   
-  `;
-  }
-  
+  `;}
+ 
+// User is first prompted for input from inquirer method and this data is passed into another function
 promptUser().then(function(answers){
+    // inquirer data used in generateMarkdown function to construct readme file 
     const content = generateMarkdown(answers);
+    // Function returns writeFile method to write the readme document  
     return fs.writeFile("readme.md",content,function(err){
         if (err){
             return console.log(err);

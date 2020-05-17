@@ -1,15 +1,13 @@
 
-  # d
-  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-  [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
-  [![nLicense](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+  # myproject
+  (https://github.com/abazrafshan/myproject)
 
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause);
   ## Description
   
-  d
+  This is a great project
   
-  The deployed application can be found at the following link: d
+  The deployed application can be found at the following link: myproject.com
   
   ## Table of Contents
 
@@ -29,15 +27,15 @@
   
   Install dependencies for this application by running command:
   
-  d
+  npm i
   
   ## Usage
   
-  d
+  Not much!
   
   ## License
   
-  Project is licensed under the following: MIT
+  Project is licensed under the following: APACHE 2.0
   
   ## Badges
   
@@ -45,14 +43,16 @@
   
   ## Contributing
   
-  d
+  Commit often
   
   ## Tests
   
-  The following test(s) can be used to verify functionality: dd
+  The following test(s) can be used to verify functionality: 
+  
+  npm tests
 
   ## Questions
 
-  If you have any questions about the repo, open an issue or contact [d] directly at d
+  If you have any questions about the repo, open an issue or contact [abazrafshan] directly at abazrafshan123@gmail.com
   
   
