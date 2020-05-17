@@ -1,11 +1,11 @@
 
-# My Project
+# myproject
   
-No license selected
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Description
   
-Check it out
+It's a great project
   
 ## Table of Contents
 
@@ -31,15 +31,15 @@ Install dependencies for this application by running command:
   
 ## Usage
   
-a lot
+Not much
   
 ## License
   
-Project is licensed under the following: None
+Project is licensed under the following: APACHE 2.0
   
 ## Contributing
   
-not much
+Available to the public
   
 ## Tests
   
@@ -49,11 +49,17 @@ The following test(s) can be used to verify functionality:
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact [abaz] directly at abaz@gmail.com
+If you have any questions about the repo, open an issue or contact [abazrafshan] directly at abazrafshan123@gmail.com
+
+Github email: 
+
+Github profile picture: <img src = >
+
+![Github Profile Pic]()
 
 ## Links
 
 Link to deployed application: myproject.com
 
-Link to Github repo: (https://github.com/abaz/My Project)
+Link to Github repo: (https://github.com/abazrafshan/myproject)
   

@@ -10,4 +10,5 @@ The purpose of this application is to generate a README that prompts the user fo
 
 ## Screenshot
 
-![Untitled11](https://user-images.githubusercontent.com/63271368/82152576-0d1e9800-9817-11ea-971e-d30775a38c72.png)
+![Untitled11](https://user-images.githubusercontent.com/63271368/82161942-af5d7080-9855-11ea-8fd3-33f4ef1055dd.png)
+
