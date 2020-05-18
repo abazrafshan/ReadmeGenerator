@@ -1,65 +1,46 @@
 
-# myproject
+# 
   
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
   
-It's a great project
+fff
   
 ## Table of Contents
-
 * [Install](#install)
-
 * [Usage](#usage)
-
 * [License](#license)
-
 * [Contributing](#contributing)
-
 * [Tests](#tests)
-
 * [Questions](#questions)
-
 * [Links](#links)
   
 ## Install
   
 Install dependencies for this application by running command:
   
-    npm i
+    f
   
 ## Usage
   
-Not much
+f
   
 ## License
   
-Project is licensed under the following: APACHE 2.0
+Project is licensed under the following: MIT
   
 ## Contributing
   
-Available to the public
+f
   
 ## Tests
   
 The following test(s) can be used to verify functionality: 
   
-    npm test
-
+    ff
 ## Questions
-
-If you have any questions about the repo, open an issue or contact [abazrafshan] directly at abazrafshan123@gmail.com
-
-Github email: 
-
-Github profile picture: <img src = >
-
-![Github Profile Pic]()
-
+If you have any questions about the repo, open an issue or contact [abazrafshan] directly at 
 ## Links
-
-Link to deployed application: myproject.com
-
-Link to Github repo: (https://github.com/abazrafshan/myproject)
+Link to deployed application: 
+Link to Github repo: (https://github.com/abazrafshan/)
   
